@@ -1,0 +1,27 @@
+{
+  "name": "nerf-herders-migration",
+  "version": "0.0.0",
+  "description": "load json from the nerf-herders-test-data into a neo4j graph database",
+  "main": "load-json.js",
+  "private": true,
+  "scripts": {
+    "migrate": "node load-json.js",
+    "start": "npm run migrate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msundlana/nerf-herders-migration.git"
+  },
+  "keywords": [
+    "graph",
+    "node",
+    "javascript",
+    "cypher",
+    "neo4j"
+  ],
+  "dependencies": {
+    "csv-write-stream": "^2.0.0",
+    "request": "^2.88.2"
+  }
+}
